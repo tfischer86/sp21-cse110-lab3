@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 110 Lab 2</title>
+    <link rel="icon" type="image/svg" href="/Journal_Icon.svg">
+</head>
+
+<body>
+    <header>
+        <h1>Thomas's Journal</h1>
+        <h2>CSE 110 Sp21 Lab2</h2>
+
+
+        <nav>
+            <h3>Journal entries:</h3>
+            <ul>
+                <li><a href="#04/11/21">04/11/21</a></li>
+                <li><a href="#04/10/21">04/10/21</a></li>
+                <li><a href="#04/09/21">04/09/21</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section>
+        <h4>Create New Entry</h4>
+
+        <form method="post" class="form-example">
+            <div class="form-example">
+                <label>Journal entry: <br>
+                    <textarea name="entry" rows="20" cols="80" placeholder="Write stuff here"></textarea>
+                </label>
+            </div>
+
+            <div class="form-example">
+                <label>Enter Date:
+                    <input type="date" name="date" required>
+                </label>
+            </div>
+
+            Which classes had homework due today?
+            <div class="form-example">
+                <label><input type="checkbox" name="homework"> CSE 101</label><br>
+                <label><input type="checkbox" name="homework"> CSE 110</label><br>
+                <label><input type="checkbox" name="homework"> MCWP 125</label><br>
+            </div>
+
+            <br>
+
+            <fieldset>
+                <legend>Rate the day from 1 to 5</legend>
+
+                <label><input type="radio" name="rate"> 1 Star</label><br>
+                <label><input type="radio" name="rate"> 2 Stars</label><br>
+                <label><input type="radio" name="rate" checked> 3 Stars</label><br>
+                <label><input type="radio" name="rate"> 4 Stars</label><br>
+                <label><input type="radio" name="rate"> 5 Stars</label><br>
+            </fieldset>
+
+            <br>
+
+            <label>
+                What category does this entry belong in?
+                <input list="entry-category" type="text" />
+                <datalist id='entry-category'>
+                    <option value="category-school">School</option>
+                    <option value="category-other">Other</option>
+                </datalist>
+            </label>
+
+            <div class="form-example">
+                <label for="upload-media">Upload media with this entry?</label>
+                <input type="checkbox" name="upload-media" id="upload-media">
+            </div>
+
+            <label>Media type:
+                <select name="mediatype">
+                    <option value="">Choose media type.</option>
+                    <option value="image">Image</option>
+                    <option value="video">Video</option>
+                    <option value="audio">Audio</option>
+                    <option value="file">Other file</option>
+                </select>
+            </label>
+            <br>
+
+            <button type="button">Create Entry</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <main>
+        <div class="journal-entry">
+            <h3 id='04/11/21'> Sunday, 4/11/2021</h3>
+            <p>
+                I did some more reading on HTML, and learned how to use the <span>style attribute</span>. But since it's
+                forbidden in this lab, I won't include it here. <br>
+                &lt;span&gt; seems to be the HTML version of markdown's backquotes.
+                <!-- <span style='color: red'>w</span><span style='color: rgb(8, 194, 23)'>o</span><span style='color: rgb(5, 51, 202)'>w</span><span style='color: rgb(138, 0, 85)'>!</span> -->
+            </p>
+            <p>
+                <i>My cats were being bros today:</i>
+            </p>
+            <img src="/important_image.jpg" width=300 alt="Important image">
+
+            <div class="homework">
+                Homework due:
+                <ul>
+                    <li>CSE 110</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="journal-entry">
+            <h3 id='04/10/21'> Saturday, 4/10/2021</h3>
+            <p>
+                I met with my group for CSE 110 today. <br>
+                We actually weren't supposed to meet until next week, but it was fine since they're all nice people.
+                <br><br>
+                I watched a video that claimed to have the silver bullet for software engineering.
+            </p>
+
+            <details>
+                <summary>Video</summary>
+
+                <video controls width="300">
+                    <source src="/video-04-10-21.mp4" type="video/mp4">
+                    Error loading video.
+                </video>
+
+                <details>
+                    <summary>Details</summary>
+                    <label><input type="checkbox" checked> Ultimate goal accomplished. <br>
+                        <audio controls src="/sound.mp3"></audio>
+                    </label>
+                </details>
+            </details>
+
+            <div class="homework">
+                Homework due:
+                <ul>
+                    <li>CSE 101</li>
+                    <li>MCWP 125</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="journal-entry">
+            <h3 id='04/9/21'>Friday, 4/9/2021</h3>
+            <p>
+                I got through the waitlist for <b>MCWP 125</b>. <br>
+                <em>Hoooo boy</em>, I need to start my research <em>now</em> lol. At least I'm only taking 12 units this
+                quarter.
+            </p>
+
+            Weekend goals:
+            <ol>
+                <li> Check out the writing hub. </li>
+                <li> Write at least 2 AB entries over the weekend. </li>
+                <li> <strong> Don't procrastinate on MCWP. </strong> </li>
+            </ol>
+
+
+            Lowlights:
+            <ul>
+                <li> I'm in MCWP</li>
+            </ul>
+            Highlights:
+            <ul>
+                <li> They made it easier due to the pandemic and I can take it P/NP if my grade is bad. P's get degrees
+                    baby.</li>
+            </ul>
+
+            <div class="homework">
+                Homework due:
+                <ul>
+                    <li>CSE 101</li>
+                    <li>CSE 110</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>Thanks for reading my journal!</footer>
+</body>
+
+</html>
