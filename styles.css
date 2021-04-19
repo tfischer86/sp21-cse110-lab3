@@ -1,11 +1,45 @@
 /* Body */
 body {
-    background-color: #bbcde9;
+    background-color: #a9c2eb;
 }
 
 p, details, li {
     text-align: left;
     text-decoration: solid;
     color: darkslategray;
+}
+
+* {
+    margin: auto;
+    padding: 0;
+}
+
+
+h3 {
+    padding-bottom: .4cm
+}
+
+.journal-entry {
+    padding-top: .1in;
+    padding-bottom: .1in;
+    padding-left: 2em; 
+    /* .2in; */
+    padding-right: 2em;
+    /* .2in; */
+
+    /* margin: .1in .1in .1in .1in; */
+    margin: 10px 10px 10px 10px;
+
+    background-color: hsl(194, 70%, 82%);
+
+    border-style: solid;
+    border-color: darkslategray;
+
+    /* ooh that finesse */
+    border-radius: 5px;
+}
+
+footer {
+    text-align: right;
 }
 
