@@ -64,3 +64,12 @@ footer {
     text-align: right;
 }
 
+#rate-day {
+    position: relative;
+    left: 10px;
+
+    max-width: 50%;
+
+    background-color: hsl(194, 70%, 82%);
+}
+
