@@ -79,11 +79,13 @@ ul li {
     font-size: 12pt;
 }
 
+/* caption */
 img + p {
     color: rgb(1, 33, 92);
     text-align: center;
 }
 
+/* image alignment */
 h3 ~ img {
     display: block;
     margin-left: auto;
@@ -97,7 +99,7 @@ a[href^="#"] {
 div.journal-entry, .navigation-container {
     display: block;
 
-    padding-top: .1in;
+    padding-top: 2ex;
     padding-bottom: .1in;
     padding-left: 2em; 
     padding-right: 2em;
