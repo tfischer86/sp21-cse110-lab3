@@ -2,3 +2,10 @@
 body {
     background-color: #bbcde9;
 }
+
+p, details, li {
+    text-align: left;
+    text-decoration: solid;
+    color: darkslategray;
+}
+
