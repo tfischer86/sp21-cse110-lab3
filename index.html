@@ -33,9 +33,23 @@
         <h4>Create New Entry</h4>
 
         <form method="post" class="form-example">
-            <div class="form-example">
+            <div class="form-example-journal-input">
+                <style>
+                    #journal-input {
+                        background-color: hsl(194, 70%, 82%);
+                        
+                        position: static;
+
+
+                        height: 50%;
+                        width: 50%;
+
+                        max-width: 50%;
+                        min-width: 150px;
+                    }
+                </style>
                 <label>Journal entry: <br>
-                    <textarea name="entry" rows="20" cols="80" placeholder="Write stuff here"></textarea>
+                    <textarea name="entry" id="journal-input" rows="20" cols="80" placeholder="Write stuff here"></textarea>
                 </label>
             </div>
 
@@ -54,7 +68,7 @@
 
             <br>
 
-            <fieldset>
+            <fieldset id="rate-day">
                 <legend>Rate the day from 1 to 5</legend>
 
                 <label><input type="radio" name="rate"> 1 Star</label><br>
