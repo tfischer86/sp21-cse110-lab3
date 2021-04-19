@@ -27,6 +27,7 @@ nav {
 }
 
 nav > .nav-item {
+    display: inline;
     margin-top: 10px;
     margin-bottom: 10px;
 
@@ -39,17 +40,31 @@ nav > .nav-item {
     background: #a9c2eb;
 }
 
+/* Flexbox layout for journal entries */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: safe;
+}
+
 h3 {
     padding-bottom: .4cm
 }
 
 .journal-entry, .navigation-container {
+    display: block;
+
     padding-top: .1in;
     padding-bottom: .1in;
     padding-left: 2em; 
     padding-right: 2em;
 
     margin: 15px 15px 15px 15px;
+
+    /* flexbox */
+    flex-shrink: 2;
+    flex-basis: auto;
 
     background-color: hsl(194, 70%, 82%);
 
